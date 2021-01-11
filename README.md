@@ -1,10 +1,11 @@
-#Dokumentacja
+# Dokumentacja
 
 > Api ma na celu obsługe zarządzania postami w aplikacjach działających jak tablice ogłoszeń. Celem pracy była prostota i łatwość korzystania z tego rozwiązania.
 
 Autorami tego api są Marcin Czaniecki i Agata Karczewska
 
-###Dokumentacja api
+### Dokumentacja api
+
 **_Typ: get_**
 
 endpoint:
@@ -13,7 +14,8 @@ endpoint:
 /
 ```
 
-###Pobierz wszystkie posty
+### Pobierz wszystkie posty
+
 **_Typ: get_**
 
 endpoint:
@@ -22,7 +24,8 @@ endpoint:
 /posts
 ```
 
-###Pobierz jeden post
+### Pobierz jeden post
+
 **_Typ: get_**
 
 endpoint:
@@ -31,7 +34,8 @@ endpoint:
 /posts/:id
 ```
 
-###Dodaj post
+### Dodaj post
+
 **_Typ: POST_**
 
 endpoint:
@@ -40,7 +44,8 @@ endpoint:
 /posts/add
 ```
 
-###Edytuj post
+### Edytuj post
+
 **_Typ: PUT_**
 
 endpoint:
@@ -49,7 +54,8 @@ endpoint:
 /posts/edit
 ```
 
-###Usuń post
+### Usuń post
+
 **_Typ: DELETE_**
 
 endpoint:
