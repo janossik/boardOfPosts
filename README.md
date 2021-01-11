@@ -7,9 +7,9 @@ Autorami tego api są Marcin Czaniecki i Agata Karczewska
 - [Dokumentacja api](#dokumentacja-api)
 - [Pobierz wszystkie posty](#pobierz-wszystkie-posty)
 - [Pobierz jeden post](#pobierz-jeden-post)
-- [Dodaj post](dodaj-post)
-- [Edytuj post](edytuj-post)
-- [Usuń post](usuń-post)
+- [Dodaj post](#dodaj-post)
+- [Edytuj post](#edytuj-post)
+- [Usuń post](#usuń-post)
 
 ### Dokumentacja api
 
