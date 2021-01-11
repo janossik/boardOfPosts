@@ -4,6 +4,13 @@
 
 Autorami tego api są Marcin Czaniecki i Agata Karczewska
 
+- [dokumentacja-api]
+- [pobierz-wszystkie-posty]
+- [pobierz-jeden-post]
+- [dodaj-post]
+- [edytuj-post]
+- [usuń-post]
+
 ### Dokumentacja api
 
 **_Typ: get_**
