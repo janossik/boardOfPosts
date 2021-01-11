@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dokumentacja</title>
+  </head>
+  <style>
+    * {
+      font-family: "Work Sans", sans-serif;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      max-width: 1200px;
+      margin: 0 auto 100px auto;
+      padding: 0 20px;
+      gap: 10px;
+    }
+    h1 {
+      font-size: 72px;
+      font-weight: 900;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    span {
+      margin: 0;
+      padding: 0;
+      font-weight: 300;
+    }
+    .type {
+      font-size: 18px;
+      font-weight: 400;
+      color: blue;
+    }
+    .path {
+      width: 200px;
+      margin: 4px auto 4px 0;
+      padding: 8px 20px;
+      font-size: 24px;
+      font-weight: 300;
+      color: yellowgreen;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 20px;
+      text-align: center;
+    }
+    .intro {
+      max-width: 768px;
+      text-align: justify;
+    }
+  </style>
+  <body>
+    <h1>Dokumentacja</h1>
+    <div class="intro">
+      <p>
+        Api ma na celu obsługe zarządzania postami w aplikacjach działających
+        jak tablice ogłoszeń. Celem pracy była prostota i łatwość korzystania z
+        tego rozwiązania.
+      </p>
+      <p>Autorami tego api są Marcin Czaniecki i Agata Karczewska</p>
+    </div>
+    <div>
+      <h2>Dokumentacja api</h2>
+      <div>
+        <p class="type">Typ: get</p>
+        <span>endpoint: </span>
+        <p class="path">/</p>
+      </div>
+    </div>
+    <div>
+      <h2>Pobierz wszystkie posty</h2>
+      <div>
+        <p class="type">Typ: get</p>
+        <span>endpoint: </span>
+        <p class="path">/posts</p>
+      </div>
+    </div>
+    <div>
+      <h2>Pobierz jeden post</h2>
+      <div>
+        <p class="type">Typ: get</p>
+        <span>endpoint: </span>
+        <p class="path">/posts/:id</p>
+      </div>
+    </div>
+    <div>
+      <h2>Dodaj post</h2>
+      <div>
+        <p class="type">Typ: POST</p>
+        <span>endpoint: </span>
+        <p class="path">/posts/add</p>
+      </div>
+    </div>
+    <div>
+      <h2>Edytuj post</h2>
+      <div>
+        <p class="type">Typ: PUT</p>
+        <span>endpoint: </span>
+        <p class="path">/posts/edit</p>
+      </div>
+    </div>
+    <div>
+      <h2>Usuń post</h2>
+      <div>
+        <p class="type">Typ: DELETE</p>
+        <span>endpoint: </span>
+        <p class="path">/posts/remove</p>
+      </div>
+    </div>
+  </body>
+</html>
