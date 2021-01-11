@@ -4,12 +4,12 @@
 
 Autorami tego api są Marcin Czaniecki i Agata Karczewska
 
-- [dokumentacja-api]
-- [pobierz-wszystkie-posty]
-- [pobierz-jeden-post]
-- [dodaj-post]
-- [edytuj-post]
-- [usuń-post]
+- [dokumentacja-api](#dokumentacja-api)
+- [pobierz-wszystkie-posty](#pobierz-wszystkie-posty)
+- [pobierz-jeden-post](#pobierz-jeden-post)
+- [dodaj-post](dodaj-post)
+- [edytuj-post](edytuj-post)
+- [usuń-post](usuń-post)
 
 ### Dokumentacja api
 
