@@ -11,6 +11,8 @@ Autorami tego api są Marcin Czaniecki i Agata Karczewska
 - [Edytuj post](#edytuj-post)
 - [Usuń post](#usuń-post)
 
+![Mapa API](https://i.ibb.co/3fWDpcj/pobrane.png)
+
 ### Dokumentacja api
 
 **_Typ: get_**
@@ -58,7 +60,7 @@ endpoint:
 endpoint:
 
 ```
-/posts/edit
+/posts/:id
 ```
 
 ### Usuń post
@@ -68,5 +70,10 @@ endpoint:
 endpoint:
 
 ```
-/posts/remove
+/posts/:id
 ```
+
+## Struktura posta
+> Post jest skonstruowany za pomocą mongoose schema i wyeksportowany jako model
+
+![Mapa struktury posta](https://i.ibb.co/VHjf2Xd/Screenshot-2.png)
