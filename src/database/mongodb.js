@@ -1,11 +1,20 @@
 const mongoose = require("mongoose");
 
-const uri = `mongodb+srv://${process.env.username}:${process.env.password}@fd-squad.zz6gv.mongodb.net/${process.env.dbname}?retryWrites=true&w=majority`;
+require("dotenv").config();
+
+mongoose.set("useCreateIndex", true);
+
+const uri = `mongodb+srv://${process.env.USERNAME_DB}:${process.env.PASSWORD_DB}@fd-squad.zz6gv.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+
 mongoose.connect(
   uri,
+
   { useNewUrlParser: true, useUnifiedTopology: true },
+
   (err) => {
-    err ? console.error(err) : console.log(`Database was connetct!`);
+    err
+      ? console.error("Database: " + err.message)
+      : console.log(`Database was connetct!`);
   }
 );
 
