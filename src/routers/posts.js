@@ -5,7 +5,7 @@ const getFilters = require("../middlewares/fillterPosts");
 
 module.exports = () => {
   const api = Router();
-  api.get("/search", getFilters, catchAsync(controller.findAllSearch));
+  api.get("/search", getFilters, catchAsync(controller.findAllFilter));
 
   api.post("/", catchAsync(controller.create));
 

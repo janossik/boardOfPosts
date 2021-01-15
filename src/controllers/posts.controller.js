@@ -2,8 +2,8 @@ const modelPost = require("../models/post.model");
 
 const userEnters = (req) => {
   const obj = {};
-  const user = ["slug", "title", "author", "body", "tag"];
-  for (const iterator of user) {
+  const allowed = ["slug", "title", "author", "body", "tag"];
+  for (const iterator of allowed) {
     if (req.body[iterator]) {
       console.log(req.body[iterator]);
       obj[iterator] = req.body[iterator];
@@ -44,7 +44,7 @@ module.exports = {
     res.set("total-count", count);
     return res.status(200).send({ data: result.results });
   },
-  async findAllSearch(req, res) {
+  async findAllFilter(req, res) {
     const offset = parseInt(req.query.offset) || 0;
     const per_page = parseInt(req.query.per_page) || 2;
     const sort_by = {};

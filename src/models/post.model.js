@@ -14,7 +14,7 @@ const PostSchema = new Schema(
     timestamps: true,
   }
 );
-
+PostSchema.index({ title: "text" });
 PostSchema.plugin(URLSlugs("title", { field: "slug", update: true }));
 PostSchema.plugin(mongoCursor.mongoosePlugin);
 
