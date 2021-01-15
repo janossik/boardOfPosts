@@ -1,12 +1,21 @@
 const mongoose = require("mongoose");
+const URLSlugs = require("mongoose-url-slugs");
+const mongoCursor = require("mongo-cursor-pagination");
 const { Schema } = mongoose;
 
-const postSchema = new Schema({
-  title: String,
-  author: String,
-  body: String,
-  date: { type: Date, default: Date.now },
-  tag: String
-});
+const PostSchema = new Schema(
+  {
+    title: { type: String, required: true },
+    author: { type: String, required: true },
+    body: { type: String, required: true },
+    tag: { type: String, default: "brak" },
+  },
+  {
+    timestamps: true,
+  }
+);
 
-module.exports = mongoose.model("Post", postSchema);
+PostSchema.plugin(URLSlugs("title", { field: "slug", update: true }));
+PostSchema.plugin(mongoCursor.mongoosePlugin);
+
+module.exports = mongoose.model("Post", PostSchema);
